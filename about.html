@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Artwork</title>
+    <!--<link rel="stylesheet" type="text/css" href="./style.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-family: 'Dancing Script', cursive;
+      background-color: #95c4e7;
+      color: seashell;
+    }
+
+
+    /* --  styles of the header section  --*/
+
+    .header {
+      width: 100%;
+      height: 22.5rem;
+    }
+
+    .banner {
+      width: 100%;
+      height: 18.66rem;
+      background-color: #95c4e7;
+      position: relative;
+    }
+
+    .logo-image {
+      display: inline-block;
+      float:left;
+      width: 25rem;
+      height: 13.88rem;
+      /*border: 1px solid yellow;*/
+      margin-left: 1rem;
+      margin-top: 2.25rem;
+    }
+
+    #logo {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .shop {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      transform: scale(1.1);
+      transition: all 0.5s ease-in-out;
+      filter: grayscale(10%);
+
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 6.66rem;;
+      background-color: rgba(250,250,250,.8);
+      color: #95c4e7;
+      border: 1px solid #000;
+      text-align: center;
+      border-radius: 10px;
+      padding: 0.27rem 0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.3rem;
+      /* Position the tooltip */
+      position: absolute;
+      top: 0;
+      right: 1.4rem;
+      z-index: 1;
+    }
+
+
+
+    .name {
+      font-family: 'Sacramento', cursive;
+      font-style: oblique;
+      font-size: 5rem;
+      display: inline-block;
+      float: right;
+      color: seashell;
+      margin-right: 12rem;
+      margin-top: 6rem;
+    }
+
+    .navigation {
+      width: 100%;
+      height: 3.77rem;
+      background-color: #eae6e3;
+      border: 1px solid #eae6e3;
+    }
+
+
+    .nav {
+      display: inline-block;
+      float: right;
+      list-style-type: none;
+      margin-right: 1rem;
+    }
+
+    .menu {
+      display: inline-block;
+      background-color: #95c4e7;
+      padding: 0.55rem 1rem;
+      border-radius: 10px;
+      margin-right: 1rem;
+      margin-top: -0.25rem;
+    }
+
+    a {
+      color: seashell;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    .menu:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease-in-out;
+      filter: grayscale(50%);
+      cursor: pointer;
+    }
+
+    .social {
+      display: inline-block;
+      float: left;
+    }
+
+    .social-icon {
+      display: inline-block;
+      background-color: #95c4e7;
+      padding: 0.55rem 1rem;
+      border-radius: 10px;
+      margin-right: 1rem;
+      margin-top: -0.25rem;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease-in-out;
+      filter: grayscale(50%);
+      cursor: pointer;
+    }
+
+    .aboutme-container {
+      margin: 1rem auto;
+      width: 70%;
+      height: 45rem;
+      padding: 3rem;
+      line-height: 1.6;
+      letter-spacing: 0.18rem;
+    }
+
+    .aboutme-container .about-me {
+      font-family: 'Sacramento', cursive;
+      font-size: 2rem;
+    }
+
+    .aboutme-picture-size {
+      height: 8rem;
+      width: 11rem;
+      border: 2px solid seashell;
+    }
+
+    #aboutme-image-1 {
+      float: right;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    #aboutme-image-2 {
+      float: left;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+    }
+
+    #aboutme-image-3 {
+      float: right;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    .footer {
+      position: relative;
+      bottom: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 4.444rem;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .footer p {
+      color: #eae6e3;
+      font-size: 1.4rem;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="banner">
+
+        <div class="logo-image"><img id="logo" src="./assets/logo.jpg" alt="bannerlogo"></div>
+
+        <h1 class="name">A_artirl</h1>
+
+        <div class="shop"><a href="basket.html"><i class="tooltip fa fa-shopping-cart" aria-hidden="true"><span class="tooltiptext">Your basket</span></i></a></div>
+
+      </div>
+
+      <div class="navigation">
+
+          <ul class="social">
+
+            <li class="social-icon"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon"><a href="https://www.instagram.com/a_artirl/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+          </ul>
+
+          <ul class="nav">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li class="menu"><a href="about.html">about.me</a></li>
+            <li class="menu current"><a href="gallery.html">Gallery</a></li>
+            <li class="menu"><a href="contact.html">Info</a></li>
+            <!--<li class="menu"><a href="basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>-->
+          </ul>
+
+      </div>
+
+    </div>
+
+    <div class="aboutme-container">
+
+      <p class="about-me"><img id="aboutme-image-1" class="aboutme-picture-size" src="./assets/about_me_assets/gyor.jpg" alt="gyor">I was born in 1994 in Győr, Hungary. From young age
+        i was interested in art in many forms, but I only started to show serious interest around my teenager years.
+        <img id="aboutme-image-2" class="aboutme-picture-size" src="./assets/about_me_assets/anna.jpg" alt="artist">After graduating high school I intented to go to university and study biology,
+        but after 2 years I left and moved to Ireland. I fell in love with the beauty of the country side.
+        I started to sell my pantings in the famous Ha'Penny market <img id="aboutme-image-3" class="aboutme-picture-size" src="./assets/about_me_assets/hapenny.jpg" alt="hapenny"> in the Grand social Dublin.
+        And that's how my art journey began...</p>
+
+    </div>
+
+    <div class="footer">
+      <p>copyright 2020</p>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

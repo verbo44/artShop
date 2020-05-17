@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Artwork</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="banner">
+
+        <div class="logo-image"><img id="logo" src="./assets/logo.jpg" alt="bannerlogo"></div>
+
+        <h1 class="name">A_artirl</h1>
+
+        <div class="shop"><a href="basket.html"><i class="tooltip fa fa-shopping-cart" aria-hidden="true"><span class="tooltiptext">Your basket<br>Items: </span></i></a></div>
+
+      </div>
+
+      <div class="navigation">
+
+          <ul class="social">
+
+            <li class="social-icon"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon"><a href="https://www.instagram.com/a_artirl/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+          </ul>
+
+          <ul class="nav">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li class="menu"><a href="about.html">about.me</a></li>
+            <li class="menu current"><a href="gallery.html">Gallery</a></li>
+            <li class="menu"><a href="contact.html">Info</a></li>
+            <!--<li class="menu"><a href="basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>-->
+          </ul>
+
+      </div>
+
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-header">
+        <h2>Contact</h2>
+        <p>Thank you for visiting my website. If you have any queries please do not hesitate to contact me!
+        You can see my mobile number and e-mail address below and also can send me a quick message by the application.</p>
+      </div>
+
+      <div class="tel-num">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>089 123 5445</p>
+      </div>
+
+      <div class="email">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <p>art-a@gmail.com</p>
+      </div>
+
+      <div class="form">
+        <p>Quick Message</p>
+        <form id="quick-message" action="./contact.html" method="POST">
+          <label for="visitorname">Name: </label>
+          <input type="text" id="visitorname" name="visitorname" placeholder=" your name...">
+          <br>
+          <label for="visitoremail">E-mail: </label>
+          <input type="text" id="visitoremail" name="visitoremail" placeholder=" your email...">
+          <br>
+          <label for="visitormessage">Your message: </label>
+          <br>
+          <textarea id="visitormessage" name="visitormessage" rows="5" cols="30" placeholder=" type your message here..."></textarea>
+          <br>
+          <input type="submit" value="Send">
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>copyright 2020</p>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

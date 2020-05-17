@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Artwork</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="banner">
+
+        <div class="logo-image"><img id="logo" src="./assets/logo.jpg" alt="bannerlogo"></div>
+
+        <h1 class="name">A_artirl</h1>
+
+        <div class="shop"><a href="basket.html"><i class="tooltip fa fa-shopping-cart" aria-hidden="true"><span class="tooltiptext">Your basket</span></i></a></div>
+
+      </div>
+
+      <div class="navigation">
+
+          <ul class="social">
+
+            <li class="social-icon"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon"><a href="https://www.instagram.com/a_artirl/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+          </ul>
+
+          <ul class="nav">
+            <li class="menu current"><a href="index.html">Home</a></li>
+            <li class="menu"><a href="about.html">about.me</a></li>
+            <li class="menu"><a href="gallery.html">Gallery</a></li>
+            <li class="menu"><a href="contact.html">Info</a></li>
+          </ul>
+
+      </div>
+
+    </div>
+
+    <div class="main-container">
+
+      <div class="video-wrapper darken-pseudo">
+
+        <video autoplay muted loop id="myVideo">
+          <source src="./assets/poster_video.mp4" type="video/mp4">
+        </video>
+
+<!-- Optional: some overlay text to describe the video -->
+        <div class="video-paragh-box">
+
+          <p class="video-paragh">Earth without "Art" is just "eh"</p>
+<!-- Use a button to pause/play the video with JavaScript -->
+        <!--<button id="myBtn" onclick="myFunction()">Pause</button>-->
+        </div>
+
+      </div>
+
+        <h2 class="main-heading">From my Collections</h2>
+
+        <div class="slide-container">
+          <div class="carousel-slide">
+             <img src="./assets/kep5.jpg" id="lastClone" alt="">
+             <img src="./assets/kep1.jpg" alt="">
+             <img src="./assets/kep2.jpg" alt="">
+             <img src="./assets/kep4.jpg" alt="">
+             <img src="./assets/kep5.jpg" alt="">
+             <img src="./assets/kep1.jpg" id="firstClone" alt="">
+          </div>
+        </div>
+
+        <div id="prevBtn" class="button"></div>
+        <div id="nextBtn" class="button"></div>
+
+        <div id="info" class="more-info">
+          <p class="more">More...</p>
+        </div>
+        <div id="pop-up-info" class="pop-up">
+          <p class="pop-up-paragh">All pictures created by an unique art style.<br>
+            See more paintings in my online <a href="gallery.html">gallery</a>.</p>
+          <span id="popClose" class="pop-up-close">Close</span>
+        </div>
+
+        <div class="shop-button">
+
+          <a href="./gallery.html" id="shop-now">Shop Now</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <p>copyright 2020</p>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
